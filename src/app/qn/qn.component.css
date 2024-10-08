@@ -1,0 +1,18 @@
+.loop{
+	list-style-type: none;
+	width: 9rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0.5rem;
+}
+.box{
+	cursor: pointer;
+	border: 1px solid black;
+	padding:2rem;
+}
+.selected{
+	background-color: darkviolet;
+}
+.invisible-box{
+	padding:2rem;
+}

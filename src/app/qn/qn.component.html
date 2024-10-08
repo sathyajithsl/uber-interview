@@ -1,0 +1,18 @@
+<div>
+  {{ clickSet.values() | json }}
+</div>
+
+<ul #btn class="loop">
+  <li
+    *ngFor="let item of formattedData; let i = index"
+    [attr.data-value]="item"
+    [attr.data-idx]="i"
+    [ngClass]="{
+      'invisible-box': item == 0,
+      'box': item == 1,
+      'selected': isSelected(i)
+    }"
+  ></li>
+</ul>
+
+<!-- (click)="boxClick(i, item)" -->
